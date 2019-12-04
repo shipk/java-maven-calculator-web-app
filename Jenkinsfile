@@ -1,5 +1,5 @@
 node {
-   def mvnHome = tool 'M3'
+   def mvnHome = tool 'MAVEN3'
 
    stage('Checkout Code') { 
       git 'https://github.com/shipk/java-maven-calculator-web-app.git'
