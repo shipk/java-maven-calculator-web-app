@@ -17,9 +17,9 @@
     </properties>
 
     <scm>
-        <connection>scm:git:https://github.com/maping/java-maven-calculator-web-app.git</connection>
-        <developerConnection>scm:git:https://github.com/maping/java-maven-calculator-web-app.git</developerConnection>
-        <url>https://github.com/maping/java-maven-calculator-web-app.git</url>
+        <connection>scm:git:https://github.com/shipk/java-maven-calculator-web-app.git</connection>
+        <developerConnection>scm:git:https://github.com/shipk/java-maven-calculator-web-app.git</developerConnection>
+        <url>https://github.com/shipk/java-maven-calculator-web-app.git</url>
         <tag>HEAD</tag>
     </scm>
 
@@ -178,11 +178,11 @@
                 <configuration>
                     <container>
                         <containerId>tomcat8x</containerId>
-                        <home>/Users/maping/apache/tomcat</home>
+                        <home>/Users/shipk/apache/tomcat</home>
                     </container>
                     <configuration>
                         <type>existing</type>
-                        <home>/Users/maping/apache/tomcat</home>
+                        <home>/Users/shipk/apache/tomcat</home>
                     </configuration>
                 </configuration>
             </plugin>
@@ -205,9 +205,9 @@
                 <artifactId>azure-webapp-maven-plugin</artifactId>
                 <version>1.4.0</version>
                 <configuration>
-                    <resourceGroup>mapingAppServiceRG</resourceGroup>
-                    <appServicePlanName>mapingAppServicePlan</appServicePlanName>
-                    <appName>mapinglinuxcalculator</appName>
+                    <resourceGroup>shipkAppServiceRG</resourceGroup>
+                    <appServicePlanName>shipkAppServicePlan</appServicePlanName>
+                    <appName>shipklinuxcalculator</appName>
                     <linuxRuntime>tomcat 9.0-jre8</linuxRuntime>
                     <deploymentType>ftp</deploymentType>
                     <resources>
@@ -236,8 +236,8 @@
                 <configuration>
                     <username>username</username>
                     <password>password</password>
-                    <tagBase>https://github.com/maping/java-maven-calculator-web-app.git</tagBase>
-                    <branchBase>https://github.com/maping/java-maven-calculator-web-app.git</branchBase>
+                    <tagBase>https://github.com/shipk/java-maven-calculator-web-app.git</tagBase>
+                    <branchBase>https://github.com/shipk/java-maven-calculator-web-app.git</branchBase>
                 </configuration>
             </plugin>
 
