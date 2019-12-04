@@ -39,6 +39,11 @@ node {
            input message: 'Deploy this web app to production ?'
       }
       echo 'Deploy...'
+      if (isUnix()) {
+         sh "'${mvnHome}/bin/mvn' cargo:run"
+      } else {
+         bat(/"${mvnHome}\bin\mvn" cargo:run/)
+      }
    }
 }
    
