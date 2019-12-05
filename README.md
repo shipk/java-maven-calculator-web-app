@@ -72,7 +72,6 @@ $ mvn clean test
 [INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
 ```
 ### 1.5 Run Integration Test
-
 ```console
 $ mvn clean integration-test
 [INFO] -------------------------------------------------------
