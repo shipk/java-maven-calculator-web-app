@@ -11,6 +11,7 @@ node {
          bat(/"${mvnHome}\bin\mvn" clean test/)
       }
    }
+   /*
    stage('Integration Test') {
       if (isUnix()) {
          sh "'${mvnHome}/bin/mvn' integration-test"
@@ -18,6 +19,7 @@ node {
          bat(/"${mvnHome}\bin\mvn" integration-test/)
       }
    }
+   */
  /*
    stage('Performance Test') {
       if (isUnix()) {
@@ -27,6 +29,7 @@ node {
       }
    }
   */
+  /*
   stage('Performance Test') {
       if (isUnix()) {
          sh "'${mvnHome}/bin/mvn' verify"
@@ -34,6 +37,7 @@ node {
          bat(/"${mvnHome}\bin\mvn" verify/)
       }
    }
+   */
    stage('Deploy') {
       timeout(time: 10, unit: 'MINUTES') {
            input message: 'Deploy this web app to production ?'
